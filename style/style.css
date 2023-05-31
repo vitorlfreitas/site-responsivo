@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital@0;1&display=swap');
 @font-face {
     font-family: 'Android' ;
     src: url('/fontes/idroid.otf') format('opentype');
@@ -15,7 +16,7 @@
 
     --font-padrão: Arial, Verdana, Helvetica, sans-serif;
     --font-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;}
+    --fonte-android: 'Android','Roboto', cursive;}
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +34,7 @@ header {
 header > h1 {
     color: #fff;
     font-family: var(--font-destaque);
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 20px;
     font-weight: normal;
     /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.123); */
@@ -78,12 +79,12 @@ main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
     font-weight: normal;
-    font-size: 1.8em;
+    font-size: 3.5em;
 }
 main h2 {
     font-family: var(--fonte-android);
     color: var(--cor4);
-    font-size: 1,2em;
+    font-size: 2em;
     font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
@@ -168,6 +169,7 @@ footer a {
 footer a:hover {
     color: var(--cor1);
 }
+}
 @media screen and (max-width:320px) {
     
     header h1 {
@@ -239,7 +241,7 @@ footer a:hover {
             font-size: 2em;
         }
     }
-    @media all and (max-width:600px) {
+    @media screen and (max-width:600px) {
         header > p {
             font-size: 0.8em;
             padding: -1px 10px 10px 10px;
